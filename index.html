@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <!--------link section---------->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---------boostrap link section---------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>My Portfolio 1</title>
 </head>
 <body>
@@ -39,21 +43,21 @@
             </div>
         </div>
         <!-----------about section ------------>
+        <h1 class="mt-5" style="text-align: center;">About Me</h1>
         <div class="about container">
             <div class="about-img">
                 <img src="./asset/my img 1.png" alt="">
             </div>
             <div class="about-taxt">
-                <h1 style="text-align: center; margin-bottom: 20px; margin-right: 100px;">About Me</h1>
                 <div class="about-box">
                     <div class="experience">
                         <i class="ri-bookmark-3-fill"></i>
-                        <h2>Experience</h2>
+                        <h5>Experience</h5>
                         <p>2+ years <br>Frond-End <br> Developer.</p>
                     </div>
                     <div class="education">
                         <i class="ri-team-fill"></i>
-                        <h2>Education</h2>
+                        <h5>Education</h5>
                         <p>Diploma in <br>Computer <br>Enginnering.</p>
                     </div>
                 </div>
@@ -75,12 +79,12 @@
                 </div>
                 <div class="service-box">
                     <i class="ri-code-box-line i"></i>
-                    <h1>Web Designer</h1>
+                    <h1>Web Developer</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, mollitia?</p>
                 </div>
                 <div class="service-box">
                     <i class="ri-android-line i"></i>
-                    <h1>Web Designer</h1>
+                    <h1>Apps Developer</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, mollitia?</p>
                 </div>
             </div>
@@ -158,18 +162,46 @@
             </div>
         </div>
         <!------------------Contact section-------------------->
-        <div class="contact container">
-            <h1>Contact Info</h1>
-            <div class="contact-item">
-                <input type="text" name="Name" id="name" placeholder="Your Name">
+        <h1 class="tuch">Get in Tuch</h1>
+        <div class="full-contact container">
+            <div class="left-div">
+                <div class="col-6 py-50">
+                    <h3 class="mb-4 talk">Talk to me</h3>
+                    <div class="row width-300 height-300 mb-2 p-4 get-in">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email</p>
+                        <p>didarul7755@gmail.com</p>
+                        <button class="btn btn1">Click Here <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="row width-300 height-300 mb-2 p-4 get-in">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>Whats App</p>
+                        <p>+880-1318309289</p>
+                        <button class="btn btn1">Click Here <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="row width-300 height-300 mb-3 p-4 get-in">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                        <p>Muhammad Sakib</p>
+                        <button class="btn btn1">Click Here <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-                <input type="text" name="Email" id="email" placeholder="Email Address">
+            <div class="right-div">
+                <div class="contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <input type="text" name="Name" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="contact-item">
+                        <input type="text" name="Email" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="contact-item">
+                        <input type="text" name="Email" id="comment" placeholder="Project Details">
+                    </div>
+                    <input type="submit" id="submit">
+                </div>
             </div>
-            <div class="contact-item">
-                <input type="text" name="Email" id="comment" placeholder="Massage Here">
-            </div>
-            <input type="submit" id="submit">
         </div>
         <!------------------footer section-------------------->
         <div class="footer">
@@ -185,8 +217,8 @@
                 <div class="contact-footer">
                     <h2 style="color: rgb(204, 207, 210);">Get In Tuch</h2>
                     <p style="margin-bottom: 10px;">4392-Hathazari,<br> Chittagong, Bangladesh.</p>
-                    <h4>Email : didarul7755@gmail.com</h4>
-                    <h4>Phone : +880-1318309289</h4>
+                    <h5>Email : didarul7755@gmail.com</h5>
+                    <h5>Phone : +880-1318309289</h5>
                     <div class="icon-1st">
                         <i class="ri-facebook-circle-fill"></i>
                         <i class="ri-twitter-fill"></i>
@@ -197,10 +229,11 @@
                 </div>
             </div>
             <div class="copyright">
-                <h4><span>Copyright</span> © 2007 - 2023 - by Didarul Alam. All Rights Reserved.</h4>
+                <h5><span>Copyright</span> © 2007 - 2023 - by Didarul Alam. All Rights Reserved.</h5>
             </div>    
         </div>
-
     </div>
+    <!---------javascript link section---------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
