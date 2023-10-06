@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    max-width: 1400px;
+    /* max-width: 1400px; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .full-container{
@@ -129,7 +129,7 @@ header{
 /*---------------about section-------------------*/
 .about{
     display: flex;
-    padding-top: 10%;
+    padding-top: 5%;
     gap: 5rem;
 }
 .about-img{
@@ -150,7 +150,7 @@ header{
 }
 .experience, .education{
     border: 1.5px solid black;
-    padding: 20px 40px;
+    padding: 5px 50px;
     border-radius: 20px;
     text-align: center;
     margin-top: 20px;
@@ -191,12 +191,12 @@ header{
 }
 .service-box{
     width: 30%;
-    height: 250px;
+    height: auto;
     border: 1.5px solid black;
     border-radius: 20px;
     align-items: center;
     text-align: center;
-    padding-top: 120px;
+    padding: 80px 0;
     transition: 0.8s ease;
 }
 .service-box:hover{
@@ -211,14 +211,16 @@ header{
 /*---------------portfolio section-------------------*/
 .portfolio{
     text-align: center;
-    margin-top: 6%;
+    margin: 6% auto 0 auto;
 }
 .port-main{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .portfolio-1st, .portfolio-2nd{
     display: flex;
+    margin: 0 auto;
 }
 .portfolio-box1, .portfolio-box2, .portfolio-box3{
     width: 300px;
@@ -288,20 +290,52 @@ header{
     cursor: pointer;
 }
 /*---------------Contact section-------------------*/
+.tuch{
+    text-align: center;
+    margin-top: 5%;
+}
+.full-contact{
+    display: flex;
+    flex-direction: row;
+}
+.left-div{
+    width: 50%;
+    height: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+.get-in{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.py-50{
+    margin: 0 auto;
+}
+.talk{
+    margin-top: -23px;
+}
+.right-div{
+    width: 50%;
+    height: auto;
+    padding-left: 27px;
+}
 .contact{
     text-align: center;
     margin-top: 6%;
     height: 500px;
 }
+.contact h3{
+    text-align: start;
+    margin-left: 107px;
+}
 .contact-item{
     display: flex;
     width: 42%;
     align-items: center;
-    margin: 0 auto;
     height: 100px;
 }
 #name{
-    padding: 20px 150px;
+    padding: 15px 130px;
     align-items: center;
     margin-top: 20px;
     border-radius: 20px;
@@ -311,9 +345,9 @@ header{
     box-shadow: 10px 10px 8px #888888;
 }
 #email{
-    padding: 20px 150px;
+    padding: 15px 130px;
     align-items: center;
-    margin-top: -40px;
+    margin-top: -38px;
     border-radius: 20px;
     text-align: center;
 }
@@ -321,7 +355,7 @@ header{
     box-shadow: 10px 10px 8px #888888;
 }
 #comment{
-    padding: 70px 150px;
+    padding: 70px 130px;
     align-items: center;
     margin-top: 10px;
     border-radius: 20px;
@@ -337,6 +371,7 @@ header{
     background-color: rgb(55, 179, 252);
     margin-top: 60px;
     font-weight: bold;
+    margin-left: -70px;
 }
 #submit:hover{
     border: 1.5px solid black;
@@ -347,7 +382,7 @@ header{
 .footer{
     background-color: #888888;
     padding: 0 120px;
-    height: 290px;
+    height: auto;
 }
 .footer-main{
     display: flex;
@@ -399,7 +434,7 @@ header{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
-.copyright h4 span{
+.copyright h5 span{
     color: rgb(160, 11, 11);
 }
 /*--------------footer end-----------------*/
